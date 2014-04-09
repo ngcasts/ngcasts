@@ -1,10 +1,10 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+@import "episode.scss";
 
 // bower:scss
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
-@import "episode";
 // endbower
 
 .browsehappy {
@@ -82,8 +82,8 @@ body {
     .header,
     .marketing,
     .footer {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 10;
+        padding-right: 10;
     }
     /* Space out the masthead */
     .header {
