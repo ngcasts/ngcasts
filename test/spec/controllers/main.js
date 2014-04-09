@@ -15,4 +15,8 @@ describe('Controller: MainCtrl', function () {
       $scope: scope
     });
   }));
+
+  it('should attach a list of episodes to the scope', function () {
+    expect(scope.episodes.length).toBeGreaterThan(0);
+  });
 });
