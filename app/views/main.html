@@ -1,12 +1,20 @@
 <div class="row">
-  <div class="col-sm-6 col-md-4 episode" ng-repeat="episode in episodes">
-    <span class="label label-info episode-number">Episode <span ng-bind="episode.number"></span></span>
+  <div class="col-sm-12 col-md-12 episode" ng-repeat="episode in episodes">
+    <span class="label label-info episode-number">
+      Episode #<span ng-bind="episode.number"></span>
+    </span>
     <div class="thumbnail">
-      <img src="images/episodes/1.png" alt="...">
-      <div class="caption">
-        <h4 ng-bind="episode.title"></h4>
-        <p ng-bind="episode.description"></p>
-        <p><a href="#" class="btn btn-primary" role="button">Watch</a></p>
+      <div class="row">
+        <div class="col-lg-1 col-md-2 col-sm-2">
+          <img src="images/episodes/1.png" alt="...">
+        </div>
+        <div class="col-lg-11 col-md-10 col-sm-10">
+          <div class="caption">
+            <h4 ng-bind="episode.title"></h4>
+            <p ng-bind="episode.description"></p>
+            <p><a href="#" class="btn btn-primary" role="button">Watch</a></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
