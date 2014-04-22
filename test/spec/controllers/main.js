@@ -23,7 +23,7 @@ describe('Controller: MainCtrl', function () {
   }));
 
   it('should attach a list of episodes to the scope', function () {
-    $httpBackend.expectGET('episodes.json').respond(sampleEpisodes);
+    $httpBackend.expectGET('api/episodes.json').respond(sampleEpisodes);
     $httpBackend.flush();
     expect(angular.equals(scope.episodes, sampleEpisodes)).toBe(true);
   });

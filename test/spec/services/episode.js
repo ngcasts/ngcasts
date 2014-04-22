@@ -22,14 +22,14 @@ describe('Service: Episode', function () {
   });
 
   it('should return a list of episodes', function () {
-    $httpBackend.expectGET('episodes.json').respond(sampleEpisodes);
+    $httpBackend.expectGET('api/episodes.json').respond(sampleEpisodes);
     var episodes = Episode.query();
     $httpBackend.flush();
     expect(angular.equals(episodes, sampleEpisodes)).toBe(true);
   });
 
   it('should return an episode by number', function () {
-    $httpBackend.expectGET('episodes/1.json').respond(sampleEpisodes[0]);
+    $httpBackend.expectGET('api/episodes/1.json').respond(sampleEpisodes[0]);
     var episode = Episode.get({episodeNumber: 1});
     $httpBackend.flush();
     expect(angular.equals(episode, sampleEpisodes[0])).toBe(true);

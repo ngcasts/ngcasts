@@ -17,6 +17,10 @@ angular
             templateUrl: 'views/contact.html',
             controller: 'ContactCtrl'
           })
+          .when('/episodes/:episodeNumber', {
+            templateUrl: 'views/episodes.html',
+            controller: 'EpisodesCtrl'
+          })
           .otherwise({
             redirectTo: '/'
           });
