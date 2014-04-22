@@ -2,5 +2,5 @@
 
 angular.module('ngcastsApp')
   .service('Episode', function Episode($resource) {
-      return $resource('api/episodes/:episodeNumber.json');
+      return $resource('api/episodes/:episodeNumber.json', {}, {cache: true});
   });
