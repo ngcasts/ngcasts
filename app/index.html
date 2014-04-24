@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
 </head>
-<body ng-app="ngcastsApp" ng-controller="ApplicationCtrl">
+<body ng-app="ngcastsApp">
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
   your browser</a> to improve your experience.</p>
@@ -36,8 +36,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li ng-class="{active:isActive('/')}"><a ng-href="#/">Home</a></li>
-        <li ng-class="{active:isActive('/contact')}"><a ng-href="#/contact">Contact</a></li>
+        <li ngc-active-if-path="/"><a ng-href="#/">Home</a></li>
+        <li ngc-active-if-path="/contact"><a ng-href="#/contact">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -91,7 +91,7 @@
 <script src="scripts/controllers/contact.js"></script>
 <script src="scripts/services/episode.js"></script>
 <script src="scripts/controllers/episodes.js"></script>
-<script src="scripts/controllers/application.js"></script>
+<script src="scripts/directives/ngcactiveifpath.js"></script>
 <!-- endbuild -->
 </body>
 </html>
