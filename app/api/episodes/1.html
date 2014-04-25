@@ -1,1 +1,24 @@
-First episode
+<div>HTML</div>
+
+<!--@formatter:off-->
+<div hljs language="html">
+  <div>
+    My nice clean <span>HTML</span>
+  </div>
+</div>
+<!--@formatter:on-->
+
+<div>Javascript</div>
+
+<!--@formatter:off-->
+<div hljs language="javascript">
+  var checkActivation = function () {
+    if (attrs.ngcActiveIfPath === $location.path()) {
+      element.addClass("active");
+    } else {
+      element.removeClass("active");
+    }
+  };
+  scope.$on('$routeChangeSuccess', checkActivation);
+</div>
+<!--@formatter:on-->
