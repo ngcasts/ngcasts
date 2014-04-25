@@ -1,24 +1,42 @@
-<div>HTML</div>
-
+1. Install Yeoman and the Angular Generator
 <!--@formatter:off-->
-<div hljs language="html">
-  <div>
-    My nice clean <span>HTML</span>
-  </div>
+<div hljs language="bash">
+  npm install -g yo                           # installs yeoman into global npm modules
+  npm install -g generator-angular            # installs angular-generator into global npm modules
 </div>
 <!--@formatter:on-->
 
-<div>Javascript</div>
-
+2. Generate a new project
 <!--@formatter:off-->
-<div hljs language="javascript">
-  var checkActivation = function () {
-    if (attrs.ngcActiveIfPath === $location.path()) {
-      element.addClass("active");
-    } else {
-      element.removeClass("active");
-    }
-  };
-  scope.$on('$routeChangeSuccess', checkActivation);
+<div hljs language="bash">
+  yo angular                                  # scaffold out a AngularJS project
+</div>
+<!--@formatter:on-->
+
+3. Start dev server
+<!--@formatter:off-->
+<div hljs language="bash">
+  grunt serve                                 # preview your app (formerly `grunt server`)
+</div>
+<!--@formatter:on-->
+
+4. Run default unit tests
+<!--@formatter:off-->
+<div hljs language="bash">
+  grunt test                                  # test your app
+</div>
+<!--@formatter:on-->
+
+5. Build for deployment
+<!--@formatter:off-->
+<div hljs language="bash">
+  grunt                                       # build the application for deployment
+</div>
+<!--@formatter:on-->
+
+6. Install AngularUI dependency
+<!--@formatter:off-->
+<div hljs language="bash">
+  bower install angular-ui --save             # install a dependency for your project from Bower
 </div>
 <!--@formatter:on-->
