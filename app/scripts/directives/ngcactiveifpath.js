@@ -11,7 +11,7 @@ angular.module('ngcastsApp')
             } else {
               element.removeClass("active");
             }
-          }
+          };
           scope.$on('$routeChangeSuccess', checkActivation);
         }
       };
