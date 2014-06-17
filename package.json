@@ -1,8 +1,7 @@
 {
   "name": "ngcasts",
   "version": "0.0.0",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.4.0",
@@ -33,7 +32,9 @@
     "karma": "~0.12.4",
     "karma-ng-html2js-preprocessor": "~0.1.0",
     "karma-jasmine": "~0.1.5",
-    "karma-phantomjs-launcher": "~0.1.4"
+    "karma-phantomjs-launcher": "~0.1.4",
+    "protractor": "~0.24.1",
+    "grunt-protractor-runner": "~1.0.0"
   },
   "engines": {
     "node": ">=0.10.0"
